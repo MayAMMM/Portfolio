@@ -315,34 +315,9 @@
   </main>
 
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("user_yourUserID"); // Replace 'user_yourUserID' with your EmailJS user ID
 
-      document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
 
-        // Get form values
-        var fullname = document.getElementById("fullname").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
 
-        // Send email
-        emailjs.send("service_yourServiceID", "template_yourTemplateID", {
-          from_name: fullname,
-          reply_to: email,
-          message_html: message
-        }).then(function(response) {
-          console.log("Email sent successfully:", response);
-          alert("Your message has been sent successfully!");
-        }, function(error) {
-          console.error("Email send failed:", error);
-          alert("Oops! Something went wrong. Please try again later.");
-        });
-      });
-    })();
-  </script>
 
   <!--
     - custom js link
