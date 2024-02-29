@@ -125,7 +125,7 @@ article
 .icon-box 
   {
     position: relative;
-    background: var(grey);
+    background: var(dddddf);
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -397,6 +397,7 @@ main
     bottom: 0;
     left: 0;
     width: 100%;
+    align-items: center;
     background: hsl(0, 0%, 84%);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
@@ -760,7 +761,7 @@ textarea.form-input::-webkit-resizer { display: none; }
       margin-bottom: 30px;
     }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 500px; }
 
   .sidebar-info { gap: 25px; }
 
